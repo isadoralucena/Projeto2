@@ -1,0 +1,17 @@
+{
+    "name": "projeto/glau",
+    "description": "Projeto lindo feito com meus amigos para romerio brito",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Projeto\\Glau\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Glaucyrlei P da Silva",
+            "email": "ganestgamer11@gmail.com"
+        }
+    ],
+    "require": {}
+}
