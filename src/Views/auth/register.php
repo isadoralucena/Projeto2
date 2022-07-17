@@ -1,6 +1,6 @@
 <?php
 
-use Romeritocampos\Auth\Models\User;
+use Projeto\Glau\Models\User;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['username'], $_POST['password'])) {//se existir algo nos inputs (não estiverem vázios)
 
         $user = new User($_POST['username'], $_POST['password']);//$user recebe instância de User, inicializando seus valores
-        //se não existir users iguais com mesma senha, save
+        //para não existir users iguais
         if (!User::exists($_POST['username'], $_POST['password'])) {
             $user->save();
 
@@ -18,8 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['id']= session_id() . $_POST['username'];
             header("Location: /dashboard", true, 302);
             exit;
-        } else {//users com mesma senha tentam login de novo 
-            header("Location: /login", true, 302);
+        } else {
+            header("Location: /login", true, 302);//se já existe o user, ele faz login
             exit;
         }
     }

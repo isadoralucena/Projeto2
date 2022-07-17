@@ -12,7 +12,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $password = $_POST['password'];
 
         if (User::exists($username, $password)) {
-
             //iniciar sessão
             session_start();
             $_SESSION['user'] = $username;

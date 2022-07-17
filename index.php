@@ -8,7 +8,7 @@ use Projeto\Glau\App\Application;
 $router = require_once __DIR__ . '/web.php';
 
 //criando conexao e tabelas no banco
-// require_once __DIR__ . '/database.php';
+require_once __DIR__ . '/database.php';
 
 $app = new Application($router);
 

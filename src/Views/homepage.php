@@ -7,8 +7,9 @@
     <title>Homepage</title>
 </head>
 <body>
-    
+    <h1>Homepage</h1>
     <a href="/dashboard">Login</a><!-- só será acessado com autenticação/login-->
+    <a href="/register">Registre-se</a>
     <!-- Pode-se usar onclick aqui, colocar uma imagem de user simbolizando login-->
 </body>
 </html>
