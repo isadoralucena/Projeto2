@@ -23,5 +23,14 @@ class Curso extends Model {
 
         return $statement->execute();
     }
+
+    static function display(){
+        $dados = self::$conexao -> query("SELECT * FROM cursos");
+        while(($linha = $dados->fetchArray())){   
+        echo "<ul>
+                  <li>Nome: ".$linha['nome'].", tipo de curso: ".$linha['tipoDeCurso'].", carga horária: ".$linha['cargaHoraria']."</li>
+              </ul>";
+        }
+    }
 }
 ?>

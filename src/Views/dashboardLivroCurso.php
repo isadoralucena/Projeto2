@@ -10,27 +10,27 @@
 
     <h1>Livros cadastrados</h1>
     <?php
-    $banco = new SQLite3 (__DIR__ . '/../../banco.db');
-    $dados = $banco -> query("SELECT * FROM livros");
-    while(($linha = $dados->fetchArray())){   
-        echo "<ul>
-                  <li>Título: " .$linha['titulo'].", autor: ".$linha['autor']."</li>
-              </ul>";
-    }
+    use Projeto\Glau\Models\Livro;
+
+    Livro::display();
     ?>
 
     <h1>Cursos cadastrados</h1>
     <?php
-    $dados = $banco -> query("SELECT * FROM cursos");
-    while(($linha = $dados->fetchArray())){   
-        echo "<ul>
-                  <li>Nome: ".$linha['nome'].", tipo de curso: ".$linha['tipoDeCurso'].", carga horária: ".$linha['cargaHoraria']."</li>
-              </ul>";
-    }
+    use Projeto\Glau\Models\Curso;
+
+    Curso::display();
+
     ?>
+
     <form action="/logout" method="POST">
         <button>Logout</button>
     </form>
+    
+    <form action="/dashboard" method="GET">
+        <button>Voltar</button>
+    </form>
+
     <form action="/registerLivroCurso" method="POST">
         <button>Registre mais</button>
     </form>

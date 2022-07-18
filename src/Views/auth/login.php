@@ -6,7 +6,7 @@ use Projeto\Glau\Models\User;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    if (isset($_POST['username'], $_POST['password'])) {
+    if (!empty($_POST['username']) && !empty($_POST['password'])) {
 
         $username = $_POST['username'];
         $password = $_POST['password'];

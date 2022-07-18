@@ -5,7 +5,7 @@ use Projeto\Glau\Models\User;
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     //SALVAR USUÁRIO E REDIRECIONAR PARA DASHBOARD
-    if (isset($_POST['username'], $_POST['password'])) {//se existir algo nos inputs (não estiverem vázios)
+    if (!empty($_POST['username']) && !empty($_POST['password'])) {//se existir algo nos inputs (não estiverem vázios)
 
         $user = new User($_POST['username'], $_POST['password']);//$user recebe instância de User, inicializando seus valores
         //para não existir users iguais
