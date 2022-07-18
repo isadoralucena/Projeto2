@@ -43,5 +43,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <button>Enviar</button>
     </form>   
     <a href="/login">Já tem uma conta?</a>
+    <form action="/login" method="GET">
+        <button>Voltar</button>
+    </form>
 </body>
 </html>

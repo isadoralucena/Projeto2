@@ -31,6 +31,9 @@
     <form action="/logout" method="POST">
         <button>Logout</button>
     </form>
+    <form action="/registerLivroCurso" method="POST">
+        <button>Registre mais</button>
+    </form>
 
 </body>
 </html>

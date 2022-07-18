@@ -19,5 +19,12 @@
     <form action="/dashboardLivroCurso" method="GET">
         <button>Visualizar cadastros</button>
     </form>
+
+    <form action="/logout" method="POST">
+        <button>Logout</button>
+    </form>
+    <form action="/login" method="GET">
+        <button>Voltar</button>
+    </form>
 </body>
 </html>

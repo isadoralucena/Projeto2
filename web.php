@@ -16,10 +16,6 @@ $router->post('/login', '/Views/auth/login.php');
 
 $router->post('/logout', '/Views/auth/auth.php', true);
 
-// $router->get('/user', '/Views/user.php', true);
-
-// $router->post('/cadastro', '/Views/auth/createlivro.php', true);
-
 $router->get('/registerLivroCurso', '/Views/auth/registerLivroCurso.php', true);
 $router->post('/registerLivroCurso', '/Views/auth/registerLivroCurso.php', true);
 

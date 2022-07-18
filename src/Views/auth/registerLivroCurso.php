@@ -43,5 +43,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <input type="number" min="0" step="any" name="cargaHoraria" placeholder="Informe a carga horária">
         <button>Enviar</button>
     </form>   
+    <form action="/dashboard" method="GET">
+        <button>Voltar</button>
+    </form>
 </body>
 </html>

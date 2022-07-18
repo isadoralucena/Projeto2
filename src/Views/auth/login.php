@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             header("Location: /dashboard");
             exit;
         } else {
-            header("Location: /login", 302);
+            header("Location: /register", 302);
             exit;
         }
     }
@@ -46,6 +46,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </form>
 
     <a href="/register">Registre-se</a>
-    
+    <form action="/" method="GET">
+        <button>Voltar</button>
+    </form>
 </body>
 </html>
