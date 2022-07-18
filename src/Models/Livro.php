@@ -20,5 +20,13 @@ class Livro extends Model {
 
         return $statement->execute();
     }
+    static function display(){
+        $dados = self::$conexao -> query("SELECT * FROM livros");
+        while(($linha = $dados->fetchArray())){   
+            echo "<ul>
+                    <li>Título: " .$linha['titulo'].", autor: ".$linha['autor']."</li>
+                </ul>";
+        }
+    }
 }
 ?>

@@ -5,14 +5,14 @@ use Projeto\Glau\Models\Livro;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     //SALVAR LIVRO E REDIRECIONAR PARA DASHBOARD
-    if (isset($_POST['titulo'], $_POST['autor'])) {//se existir algo nos inputs (não estiverem vázios)
+    if (!empty($_POST['titulo']) && !empty($_POST['autor'])) {//se existir algo nos inputs (não estiverem vázios)
         $livro = new Livro($_POST['titulo'], $_POST['autor']);//$livro recebe instância de Livro, inicializando seus valores
         $livro->save();    
         header("Location: /dashboardLivroCurso", true, 302);
         exit;
     }
     //SALVAR CURSO E REDIRECIONAR PARA DASHBOARD
-    if (isset($_POST['nome'], $_POST['tipoDeCurso'], $_POST['cargaHoraria'])) {//se existir algo nos inputs (não estiverem vázios)
+    if (!empty($_POST['nome']) && !empty($_POST['tipoDeCurso']) && !empty($_POST['cargaHoraria'])) {//se existir algo nos inputs (não estiverem vázios)
         $curso = new Curso($_POST['nome'], $_POST['tipoDeCurso'], $_POST['cargaHoraria']);//$user recebe instância de User, inicializando seus valores
         $curso->save();
         header("Location: /dashboardLivroCurso", true, 302);
