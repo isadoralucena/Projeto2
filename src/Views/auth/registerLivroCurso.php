@@ -29,7 +29,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre</title>
 </head>
-<body>
+<body class="logLogin">
+    <style>
+    <?php include"css/style.css"?>
+    </style>
     <h1>Registro de livros</h1>
     <form action="/registerLivroCurso" method="POST">
         <input type="text" name="titulo" placeholder="Informe o título">

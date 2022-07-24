@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 </head>
-<body>
+<body class="logLogin">
+    <style>
+    <?php include"css/style.css"?>
+    </style>
+
 
     <h1>Livros cadastrados</h1>
     <?php

@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
 </head>
-<body>
+<body class="logLogin">
+    <style>
+    <?php include"css/style.css"?>
+    </style>
+
 
     <h1>Ok, você está logado, <?php echo $_SESSION['user']?></h1>
     <h1>Escolha o que fazer agora: </h1>
