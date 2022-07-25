@@ -22,11 +22,13 @@ class Livro extends Model {
     }
     static function display(){
         $dados = self::$conexao -> query("SELECT * FROM livros");
+        echo "<table class='user_table_registered'>";
         while(($linha = $dados->fetchArray())){   
-            echo "<ul>
-                    <li>Título: " .$linha['titulo'].", autor: ".$linha['autor']."</li>
-                </ul>";
+            echo "<tr class='user_lines_table_registered color1 font1'>
+                    <td><span style='color:black; font-weight:bold; font-size: 16pt; padding-left: 20px'>Título: </span>" .$linha['titulo']."</td> <td><span style='color:black; font-weight:bold; font-size: 16pt'>Autor(a): </span>".$linha['autor']."</td>
+                </tr>";
         }
+        echo"</table>";
     }
 }
 ?>

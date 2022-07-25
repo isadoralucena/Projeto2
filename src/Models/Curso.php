@@ -26,11 +26,13 @@ class Curso extends Model {
 
     static function display(){
         $dados = self::$conexao -> query("SELECT * FROM cursos");
+        echo "<table class='user_table_registered'>";
         while(($linha = $dados->fetchArray())){   
-        echo "<ul>
-                  <li>Nome: ".$linha['nome'].", tipo de curso: ".$linha['tipoDeCurso'].", carga horária: ".$linha['cargaHoraria']."</li>
-              </ul>";
+        echo "<tr class='user_lines_table_registered color1 font1'>
+                <td><span style='color:black; font-weight:bold; font-size: 16pt; padding-left: 20px'>Nome: </span>" .$linha['nome']."</td> <td><span style='color:black; font-weight:bold; font-size: 16pt'>Tipo: </span>".$linha['tipoDeCurso']."</td> <td><span style='color:black; font-weight:bold; font-size: 16pt'>CH: </span>".$linha['cargaHoraria']."</td>
+             </tr>";
         }
+        echo"</table>";
     }
 }
 ?>

@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erro</title>
 </head>
-<body>
+<body class="logLogin">
+    <style>
+    <?php include"css/style.css"?>
+    </style>
     
     <h1>Página não encontrada: <?php echo $_SERVER['REQUEST_URI']; ?> </h1>
 

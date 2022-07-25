@@ -33,21 +33,39 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Login</title>
 </head>
-<body>
+<body class="logLogin">
+    <style> 
+    <?php include"css/style.css"?>
+    </style>
 
-    <h1>Login</h1>
 
-    <form action="/login" method="POST">
-        <input type="text" name="username" placeholder="Informe seu usuário">
-        <input type="password" name="password" placeholder="Informe sua senha">
-        <button>Enviar</button>
-    </form>
+    <div class="logLogin1 color1 font1">
+        <h1>Login</h1>
 
-    <a href="/register">Registre-se</a>
-    <form action="/" method="GET">
-        <button>Voltar</button>
-    </form>
+        <div class="logLogin2 font1 shadow">
+            <div id="log ">
+                <form action="/login" method="POST">
+                <input class="logLogin3 font1" type="text" name="username" placeholder="Informe seu usuário">
+                <input class="logLogin3 font1" type="password" name="password" placeholder="Informe sua senha">
+                <button class="button color1 font1">Enviar</button>
+                <p></p>
+                </form>
+                <a class="color1"href="/register">Registre-se</a>
+            </div>
+                
+
+        </div>
+
+        <div class="logLogin4">
+            <form action="/" method="GET">
+            <button class="button color1 font1 shadow">Voltar</button>
+             </form>    
+        </div>
+    </div>
+    
+   
 </body>
 </html>
