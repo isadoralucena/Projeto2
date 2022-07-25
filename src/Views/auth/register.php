@@ -40,15 +40,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <style>
     <?php include"css/style.css"?>
     </style>
+
+    <div class="regis color1 font1 ">
     <h1>Registro de usuários</h1>
-    <form action="/register" method="POST">
-        <input type="text" name="username" placeholder="Digite seu usuário">
-        <input type="password" id="senha"  name="password" placeholder="Digite sua senha">
-        <button>Enviar</button>
-    </form>   
-    <a href="/login">Já tem uma conta?</a>
-    <form action="/login" method="GET">
-        <button>Voltar</button>
-    </form>
+
+        <div class="regis1 font1 shadow">
+            <div class="regis2">
+                <form action="/register" method="POST">
+                    <input class="logLogin3" type="text" name="username" placeholder="Digite seu usuário">
+                    <p></p>
+                    <input class="logLogin3" type="password" id="senha"  name="password" placeholder="Digite sua senha">
+                    <p></p> 
+                    <button class="button color1">Enviar</button>
+                </form>   
+                <a class='color1' href="/login">Já tem uma conta?</a>
+            </div>
+          
+        </div>
+        
+        <div class="logLogin4">
+            <form action="/login" method="GET">
+                <button class="button color1 shadow">Voltar</button>
+                </form>
+        </div>
+
+        
+       
+
+    </div>
+
 </body>
 </html>

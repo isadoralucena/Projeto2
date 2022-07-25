@@ -42,27 +42,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </style>
 
 
-    <div class="logLogin1">
+    <div class="logLogin1 color1 font1">
         <h1>Login</h1>
 
-        <div class="logLogin2">
-                <div id="log">
-                        <form action="/login" method="POST">
-                        <input class="logLogin3" type="text" name="username" placeholder="Informe seu usuário">
-                        <input class="logLogin3" type="password" name="password" placeholder="Informe sua senha">
-                        <button class="button">Enviar</button>
-                        <p></p>
-                        <a href="/register">Registre-se</a>
-                        </form>
-                </div>
+        <div class="logLogin2 font1 shadow">
+            <div id="log ">
+                <form action="/login" method="POST">
+                <input class="logLogin3 font1" type="text" name="username" placeholder="Informe seu usuário">
+                <input class="logLogin3 font1" type="password" name="password" placeholder="Informe sua senha">
+                <button class="button color1 font1">Enviar</button>
+                <p></p>
+                </form>
+                <a class="color1"href="/register">Registre-se</a>
+            </div>
                 
 
         </div>
 
         <div class="logLogin4">
-             
             <form action="/" method="GET">
-            <button class="button">Voltar</button>
+            <button class="button color1 font1 shadow">Voltar</button>
              </form>    
         </div>
     </div>

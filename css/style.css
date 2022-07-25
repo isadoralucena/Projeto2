@@ -2,11 +2,35 @@
     padding: 0;
     margin: 0;
 }
+/******Padronizações******/
+.color1{
+    color: white;
+}
+.font1{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+.user_information{
+    position: absolute;
+    right: 0px;
+    padding: 0 30px 0 30px;
+    height: 40px;
+    font-size: 8pt;
+    background-color: #9D9A9A;
+    text-align: center;
+}
+.shadow{
+    box-shadow: 0 0 1em black;
+}
+input{
+    outline: none;
+}
+/**********Fim das padronizações********/
+
+/*******Tela de inicio*******/
 .homepage{
     background-color: rgb(82, 148, 206);
     height: 100%;
     width: 100%;
-    
 }
 .home{
     top: 80pt;
@@ -15,8 +39,6 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: white;
-    font-family: Comic Sans MS, Comic Sans, cursive;
 }
 .inicio{
     top:20pt;
@@ -24,15 +46,11 @@
     width: 100%;
     position: relative;
     align-self: center;
-    font-family: Comic Sans MS, Comic Sans, cursive;
-
 }
 .inicio a{
     text-decoration: none;
-    color: white;
 }
 .loginHome{
-    color: white;
     padding: 0.5em;
     padding-left: 3em;
     padding-right: 3em;
@@ -40,7 +58,6 @@
     border-radius: 30pt;
     font-size: 28pt;
     background-color: rgb(16, 46, 71);
-    font-family: Comic Sans MS, Comic Sans, cursive;
 }
 .loginHome:hover{
     background-color: rgb(10, 34, 54);
@@ -68,13 +85,13 @@
     top:7pt;
     font-size: 15pt;
 }
+/*******FIm da Tela de inicio*******/
 
 
 
-
-
+/******Tela de login******/
 .logLogin{
-    background-color:  rgb(16, 46, 71);;
+    background-color:  rgb(16, 46, 71);
 }
 .logLogin1{
     top: 70pt;
@@ -83,8 +100,6 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: white;
-    font-family: Comic Sans MS, Comic Sans, cursive
 }
 .logLogin2{
     display: inline-block;
@@ -93,7 +108,6 @@
     width: 300pt;
     position: relative;
     align-self: center;
-    font-family: Comic Sans MS, Comic Sans, cursive;
     background-color: rgb(80, 82, 82);
     border-radius: 9pt;
 }
@@ -101,14 +115,12 @@
     position: relative;
     top: 10pt;
     background-color: rgb(0, 0, 0);
-    color: white;
     padding: 0.5em;
     padding-left: 3em;
     padding-right: 3em;
     border: none;
     border-radius: 17pt;
     font-size: 13pt;
-    font-family: Comic Sans MS, Comic Sans, cursive;
 }
 .button:hover{
     background-color: rgb(167, 61, 0);
@@ -118,6 +130,7 @@
     top: 10pt;
 }
 .logLogin3{
+    top: 5pt;
     position: relative;
     padding: 0.5em;
     padding-left: 3em;
@@ -125,18 +138,198 @@
     border: none;
     border-radius: 7pt;
     font-size: 13pt;
-    font-family: Comic Sans MS, Comic Sans, cursive;
 }
 .logLogin4{
-    top: 7pt;
+    top: 15pt;
     position: relative;
 }
 .logLogin2 a{
     font-size: 15pt;
-    color: white;
     text-decoration: none;
 }
 .logLogin2 a:hover{
-    color:  rgb(252, 71, 0);
+    color:  rgb(252, 134, 0);
     
 }
+/******Fim da Tela de login******/
+
+/******Tela de registro de usuario******/
+.regis{
+    top: 70pt;
+    position: relative;
+    font-size: 30pt;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.regis1{
+    display: inline-block;
+    top:20pt;
+    height: 200pt;
+    width: 300pt;
+    position: relative;
+    align-self: center;
+    background-color: rgb(80, 82, 82);
+    border-radius: 9pt;
+}
+.regis2 a{
+    position: relative;
+    top: 5pt;
+    font-size: 13pt;
+    text-decoration: none;
+}
+.regis2 a:hover{
+    color:  rgb(252, 134, 0);
+}
+/******Fim da Tela de registro de usuario******/
+
+/******Tela do usuario******/
+.body_user_page{
+    background-color:  rgb(16, 46, 71);
+}
+.user_mid{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 500px;
+    font-size: 17pt;
+}
+.user_mid h1{
+    margin-bottom: 20px;
+}
+.user_mid_center{
+    width: 50%;
+    height: 400px;
+    background-color: #222222;
+    border-radius: 9pt;
+}
+.user_buttons{
+    position: relative;
+    width: 300px;
+    background-color: #9D9A9A;
+    padding: 11px;
+    border: none;
+    border-radius: 17pt;
+    font-size: 16pt;
+    margin: 30px 0 0 0 ;
+}
+.user_logout{
+    background-color: #FF1616;
+}
+.user_buttons:hover{
+    background-color: #5a5a5a;
+}
+.user_logout:hover{
+    background-color: #b41111;
+}
+/******Fim da Tela do usuario******/
+
+/******Tela de cadastro de coisas******/
+.container_user_register{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 500px;
+}
+.user_register{
+    margin-left: 20px;
+    font-size: 12pt;
+    width: 500px;
+    height: 400px;
+    display: inline-block;
+    margin: 30px;
+}
+.user_register2{
+    position: absolute;
+    right: 0px;
+}
+.user_register_input{
+    display: block;
+    width: 80%;
+    height: 30px;
+    margin: 20px 0 0 0 ;
+    padding: 0 0 0 10px;
+}
+.element_top{
+    margin-top: 30px;
+}
+.user_register_center{
+    width: 80%;
+    height: 300px;
+    background-color: #222222;
+    border: 1px solid #222222;
+    border-radius: 9pt;
+    margin-top: 20px;
+}
+.user_register_send_button{
+    width: 100px;
+    height: 30px;
+    margin: 20px;
+    background-color: rgb(16, 46, 71);
+    border-radius: 12pt;
+    border: 1pt solid rgb(16, 46, 71);;
+    vertical-align: bottom;
+}
+.user_register_send_button:hover{
+    background-color: rgb(14, 59, 97);
+}
+.user_back_button{
+    width: 100px;
+    height: 40px;
+    border-radius: 12pt;
+    background-color:#FF5757;
+    border: 1px solid #FF5757;
+}
+.user_back_button:hover{
+    background-color:#ca4040;
+}
+/******FIm  da tela de cadastro de coisas******/
+
+/******Tela de cadastros feitos******/
+.user_container_registered{
+    width: 900px;
+    height: 600px;
+}
+.user_table_registered{
+    width: 700px;
+}
+.user_lines_table_registered{
+    font-size: 14pt;
+}
+.user_registered{
+    width: 800px;
+    margin: 20px 0 0 20px;
+    font-size: 15pt;
+}
+.user_registered_space{
+    height: 80%;
+    width: 100%;
+    min-height: 100px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+.button_space{
+    margin: 10px 0 0 20px;
+}
+::-webkit-scrollbar {
+    background-color:#9D9A9A;
+}
+::-webkit-scrollbar-button {
+    background:#303030;
+}
+::-webkit-scrollbar-thumb {
+    background:#6d6d6d;
+}
+::-webkit-scrollbar-track {
+}
+::-webkit-scrollbar-track-piece {
+}
+::-webkit-scrollbar-corner {
+}
+::-webkit-resizer {
+}
+/******Fim da Tela de cadastros feitos******/
